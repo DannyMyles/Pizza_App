@@ -20,7 +20,4 @@ window.onscroll = () =>{
   }
 
 }
-
-}
-
 window.onload = fadeOut();
