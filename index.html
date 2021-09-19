@@ -28,6 +28,8 @@
         <a href="#popular">popular</a>
         <a href="#gallery">gallery</a>
         <a href="#order">order</a>
+
+        <a data-bs-toggle="offcanvas" href="#offcanvasExample" ><i class="fa fa-shopping-cart"></i> <span  class="itemCount">0</span></a>
     </nav>
 
 </header>
@@ -66,7 +68,7 @@
         <div class="col-md-4">
             <div class="p-4 shadow border border-light rounded">
                 <!-- <span class="price"> $5 - $20 </span> -->
-                <img src="./images/most.jpeg" alt="">
+                <div class="thumbnail"><img src="./images/most.jpeg" alt=""></div>
                 <div class="d-flex justify-content-between">
                     <h3 class="m-0 py-4">Peparoni</h3>
                     <div>
@@ -83,11 +85,10 @@
             <div class="p-4 shadow border border-light rounded">
                 <!-- <span class="price"> $5 - $20 </span> -->
                 <div class="thumbnail"><img src="./images/most2.jpeg" alt=""></div>
-
-                <div class="d-flex">
+                 <div class="d-flex justify-content-between">
                     <h3 class="m-0 py-4">Hawaiian</h3>
                     <div>
-                        <button type="button" class="btn"
+                        <button type="button" class="btn orderBtn"
                             data-price="1000"
                             data-name="hawaiian"
                         >Order</button>
@@ -99,10 +100,17 @@
         <div class="col-md-4">
             <div class="p-4 shadow border border-light rounded">
                 <!-- <span class="price"> $5 - $20 </span> -->
-                <img src="./images/most1.jpeg" alt="">
-                <h3 class="m-0 py-4">Large</h3>
+                <div class="thumbnail"><img src="./images/most1.jpeg" alt=""></div>
+            <div class="d-flex justify-content-between">
+                <h3 class="m-0 py-4">Periperi</h3>
+                <div>
+                    <button type="button" class="btn orderBtn"
+                        data-price="1000"
+                        data-name="Periperi"
+                    >Order</button>
+                </div>
             </div>
-        </div>
+        </div></div>
     </div>
 
     <!-- Button trigger modal -->
@@ -119,9 +127,11 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
+            <img src="" alt="" width="100%">
           <div class="form-group">
               <label for="size">Select Size</label>
               <select name="size" id="size" class="form-control">
+                  <option value=""></option>
                   <option value="Small">Small</option>
                   <option value="Medium">Medium</option>
                   <option value="Large">Large</option>
@@ -130,7 +140,8 @@
 
           <div class="form-group">
             <label for="crust">Select Crust</label>
-            <select name="size" id="size" class="form-control">
+            <select name="size" id="crust" class="form-control">
+                <option value=""></option>
                 <option value="Cryspy">Cryspy (100)</option>
                 <option value="Stuffed">Stuffed (150)</option>
             </select>
@@ -138,17 +149,67 @@
 
         <div class="form-group">
             <label for="size">Select Size</label>
-            <select name="size" id="size" class="form-control" multiple>
+            <select name="size" id="topping" class="form-control" multiple>
                 <option value="Beacon">Beacon (200)</option>
                 <option value="Chicken">Chicken (250)</option>
             </select>
         </div>
+
+        <div class="form-group">
+            <strong class="price">0</strong>
+        </div>
+
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-primary" id="orderBtn">Order</button>
         </div>
       </div>
+    </div>
+  </div>
+
+  
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <h3 class="p-3">
+          Shopping Cart
+      </h3>
+
+      <ul class="list-group list-group-flush" id="cartItems">
+          <li class="list-group-item">
+              <div class="d-flex justify-content-between">
+                  <div style="height: 100px; overflow: hidden; width: 80px;"><img src="" alt="" width="100%"></div>
+                  <div class="description"></div>
+                  <div class="price"></div>
+              </div>
+          </li>
+      </ul>
+      <div class="d-flex">
+        <div><strong>Sub  Total</strong></div>
+        <div class="subtotal">0</div>
+      </div>
+
+      <div>
+          <h4>Delivery</h4>
+          <select name="zones" id="zones">
+              <option value="">Pick Up</option>
+              <option value="Zone A">Zone A</option>
+              <option value="Zone B">Zone B</option>
+          </select>
+      </div>
+      <div class="d-flex justify-content-between">
+        <div><strong> Total</strong></div>
+        <div class="cost">0</div>
+      </div>
+
+      <div>
+          <button class="btn btn-primary">Checkout</button>
+      </div>
+        
     </div>
   </div>
 
