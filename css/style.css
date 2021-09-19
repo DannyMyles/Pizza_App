@@ -20,7 +20,7 @@
 }
 
 html{
-  font-size: 62.5%;
+  /* font-size: 62.5%;/ */
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 6rem;
@@ -39,7 +39,7 @@ section{
 
 .heading{
   text-align: center;
-  font-size: 3.5rem;
+  /* font-size: 3.5rem; */
   padding:1rem;
   color:#666;
 }
@@ -47,7 +47,7 @@ section{
 .heading span{
   color:var(--red);
 }
-
+/* 
 .btn{
   display: inline-block;
   padding:.8rem 3rem;
@@ -79,8 +79,7 @@ section{
 }
 
 .btn:hover{
-  color:#fff;
-}
+  color:#fff;} */
 
 header{
   position: fixed;
@@ -95,7 +94,7 @@ header{
 }
 
 header .logo{
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   font-weight: bolder;
   color:#666;
 }
@@ -106,7 +105,7 @@ header .logo i{
 }
 
 header .navbar a{
-  font-size: 2rem;
+  /* font-size: 2rem; */
   margin-left: 2rem;
   color:#666;
 }
@@ -116,7 +115,7 @@ header .navbar a:hover{
 }
 
 #menu-bar{
-  font-size: 3rem;
+  /* font-size: 3rem; */
   cursor: pointer;
   color:#666;
   border:.1rem solid #666;
@@ -161,12 +160,12 @@ header .navbar a:hover{
 }
 
 .home .content h3{
-  font-size: 5rem;
+  /* font-size: 5rem; */
   color:#333;
 }
 
 .home .content p{
-  font-size: 1.7rem;
+  /* font-size: 1.7rem; */
   color:#666;
   padding:1rem 0;
 }
@@ -200,20 +199,20 @@ header .navbar a:hover{
   top:3rem; left:3rem;
   background:var(--red);
   color:#fff;
-  font-size: 2rem;
+  /* font-size: 2rem; */
   padding:.5rem 1rem;
   border-radius: .5rem;
 }
 
 .popular .box-container .box h3{
   color:#333;
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   padding-top: 1rem;
 }
 
 .popular .box-container .box .stars i{
   color:gold;
-  font-size: 1.7rem;
+  /* font-size: 1.7rem; */
   padding:1rem .1rem;
 }
 
@@ -237,7 +236,7 @@ header .navbar a:hover{
 }
 
 .steps .box h3{
-  font-size: 3rem;
+  /* font-size: 3rem; */
   color:#333;
   padding:1rem;
 }
@@ -276,12 +275,12 @@ header .navbar a:hover{
 }
 
 .gallery .box-container .box .content h3{
-  font-size: 2.5rem;
+  /* font-size: 2.5rem; */
   color:#333;
 }
 
 .gallery .box-container .box .content p{
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   color:#666;
   padding:1rem 0;
 }
@@ -327,7 +326,7 @@ header .navbar a:hover{
 .order .row form .inputBox input, .order .row form textarea{
   padding:1rem;
   margin:1rem 0;
-  font-size: 1.7rem;
+  /* font-size: 1.7rem; */
   color:#333;
   text-transform: none;
   border:.1rem solid rgba(0,0,0,.3);
@@ -356,7 +355,7 @@ header .navbar a:hover{
 @media(max-width:991px){
 
   html{
-    font-size: 55%;
+    /* font-size: 55%; */
   }
 
   header{
@@ -401,7 +400,7 @@ header .navbar a:hover{
 @media(max-width:450px){
 
   html{
-    font-size: 50%;
+    /* font-size: 50%; */
   }
 
   .order .row form .inputBox input{

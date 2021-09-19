@@ -67,7 +67,7 @@ function updateOrderPrice(){
     $('#cartItems li:last .price').html(item.price);
 
     subTotal+=item.price;
-    
+
   }
 
   $('.subtotal').html(subTotal);
@@ -79,7 +79,7 @@ $(document).ready(function(){
 
   const orderModal = new bootstrap.Modal(document.getElementById('exampleModal'), {});
   cartItemTmpl = $('#cartItems').html();
-  
+
 
   $('.orderBtn').on("click", function(){
     const data = $(this).data();
@@ -133,6 +133,13 @@ $(document).ready(function(){
     orderModal.hide();
     updateOrderPrice();
     // selectePizza = undefined;
+  })
+  $('#checkoutBtn').on("click", function(){
+   alert("Order Received");
+   var myOffcanvas = document.getElementById('offcanvasExample')
+    var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas)
+    // selectePizza = undefined;
+    bsOffcanvas.hide()
   })
 
 });
