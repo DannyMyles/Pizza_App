@@ -1,6 +1,10 @@
 let menu = document.querySelector('#menu-bar');
 let navbar = document.querySelector('.navbar');
 
+function Cart(){
+  this.items
+}
+
 menu.onclick = () =>{
 
   menu.classList.toggle('fa-times');
