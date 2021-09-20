@@ -2,15 +2,21 @@ const cart = new Cart();
 const crusts = {
   "Cryspy": new Crust("Cryspy", 100),
   "Stuffed": new Crust("Stuffed", 150),
+  "Gluten-free": new Crust ("Gluten-free", 200),
 }
 const toppings = {
   "Beacon":new Topping("Beacon", 200),
-  "Chicken":new Topping("Chicken", 250)
+  "Chicken":new Topping("Chicken", 250),
+  "Cheese":new Topping("Cheese", 150),
+  "Veggies": new Topping("Veggies", 300),
+  "Salami":new Topping("Salami", 200),
 }
 
 const zones = {
   "Zone A":new Zone("Zone A", 50),
-  "Zone B":new Zone("Zone B", 150)
+  "Zone B":new Zone("Zone B", 150),
+  "Zone C":new Zone("Zone A", 170),
+  "Zone D":new Zone("Zone B", 200)
 }
 
 let selectePizza;
