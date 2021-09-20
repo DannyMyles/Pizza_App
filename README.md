@@ -19,7 +19,6 @@ https://dannymyles.github.io/Pizza_Web/
 ✔️ Home
 ✔️ Order
 ✔️ Gallary
-✔️ Review
 ✔️ Feedback
 
 # **Permissions**
