@@ -1,27 +1,3 @@
-/*let menu = document.querySelector('#menu-bar');
-let navbar = document.querySelector('.navbar');
-
-menu.onclick = () =>{
-
-  menu.classList.toggle('fa-times');
-  navbar.classList.toggle('active');
-
-}
-
-window.onscroll = () =>{
-
-  menu.classList.remove('fa-times');
-  navbar.classList.remove('active');
-
-  // if(window.scrollY > 60){
-  //   document.querySelector('#scroll-top').classList.add('active');
-  // }else{
-  //   document.querySelector('#scroll-top').classList.remove('active');
-  // }
-
-}
-// window.onload = fadeOut();*/
-
 const cart = new Cart();
 const crusts = {
   "Cryspy": new Crust("Cryspy", 100),
@@ -43,7 +19,7 @@ let cartItemTmpl;
 function updateOrderPrice(){
   let totalPrice = selectePizza.price;
   if(selectePizza.crust) totalPrice += selectePizza.crust.price;
-  
+
   if(selectePizza.toppings)
     for(let i=0; i<selectePizza.toppings.length; i++){
       totalPrice += selectePizza.toppings[i].price;
@@ -57,7 +33,6 @@ function updateOrderPrice(){
 
   let subTotal = 0;
   const deliveryPrice = cart.delivery ? cart.delivery.price : 0;
-  
   for(let i=0; i<cart.items.length; i++){
     const item = cart.items[i];
     // // console.log(item);
@@ -141,5 +116,7 @@ $(document).ready(function(){
     // selectePizza = undefined;
     bsOffcanvas.hide()
   })
-
+ $("#form").on("submit", function(){
+   alert("thank you " +this.name.value+ " for your feedback")
+ })
 });

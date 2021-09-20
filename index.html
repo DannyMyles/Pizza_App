@@ -1,414 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <title>Pizza||Web</title>
     <script src="./javascript/cart.js"></script>
 </head>
+
 <body>
 
-<!-- header section starts  -->
+    <!-- header section starts  -->
 
-<header>
+    <header>
 
-    <a href="#" class="logo"><i class="fas fa-utensils"></i>Pizza Conner</a>
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>Pizza Conner</a>
 
-    <div id="menu-bar" class="fas fa-bars"></div>
+        <div id="menu-bar" class="fas fa-bars"></div>
 
-    <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#popular">popular</a>
-        <a href="#gallery">gallery</a>
-        <a href="#order">order</a>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#popular">popular</a>
+            <a href="#gallery">gallery</a>
+            <a href="#order">order</a>
 
-        <a data-bs-toggle="offcanvas" href="#offcanvasExample" ><i class="fa fa-shopping-cart"></i> <span  class="itemCount">0</span></a>
-    </nav>
+            <a data-bs-toggle="offcanvas" href="#offcanvasExample"><i class="fa fa-shopping-cart"></i> <span
+                    class="itemCount">0</span></a>
+        </nav>
 
-</header>
+    </header>
 
-<!-- header section ends -->
+    <!-- header section ends -->
 
-<!-- home section starts  -->
+    <!-- home section starts  -->
 
-<section class="home" id="home">
+    <section class=" d-flex justify-content-between" id="home">
 
-    <div class="content">
-        <h3>Pizza Yummy!!</h3>
-        <p>Pizza is an Italian dish consisting of a usually round, <br>
-             flattened base of leavened wheat-based dough topped with tomatoes, <br>
-              cheese, and often various other ingredients, which is then baked at a high  <br>
-               temperature, traditionally in a wood-fired oven! <br></p>
-    </div>
-
-    <div class="image">
-        <img src="./images/scrool.jpeg" alt="" height="400px">
-    </div>
-
-</section>
-
-<!-- home section ends -->
-
-
-<!-- popular section starts  -->
-
-<section class="popular" id="popular">
-
-    <h1 class="heading"> most <span>popular</span> pizzas </h1>
-
-    <div class="row most-popular">
-
-        <div class="col-md-4">
-            <div class="p-4 shadow border border-light rounded">
-                <!-- <span class="price"> $5 - $20 </span> -->
-                <div class="thumbnail"><img src="./images/most.jpeg" alt=""></div>
-                <div class="d-flex justify-content-between">
-                    <h3 class="align-self-center m-0 py-4">Peparoni</h3>
-                    <div class="align-self-center">
-                        <button type="button" class="btn orderBtn  btn-warning"
-                            data-price="1000"
-                            data-name="Peparoni"
-                            
-                        >Order</button>
-                    </div>
-                </div>
-            </div>
+        <div class=" align-self-center">
+            <h3>Pizza Yummy!!</h3>
+            <p>Pizza is an Italian dish consisting of a usually round, <br>
+                flattened base of leavened wheat-based dough topped with tomatoes, <br>
+                cheese, and often various other ingredients, which is then baked at a high <br>
+                temperature, traditionally in a wood-fired oven! <br></p>
         </div>
-        <div class="col-md-4">
-            <div class="p-4 shadow border border-light rounded">
-                <!-- <span class="price"> $5 - $20 </span> -->
-                <div class="thumbnail"><img src="./images/most2.jpeg" alt=""></div>
-                 <div class="d-flex justify-content-between">
-                    <h3 class="m-0 py-4">Hawaiian</h3>
-                    <div class="align-self-center">
-                        <button type="button" class="btn orderBtn  btn-warning"
-                            data-price="1000"
-                            data-name="hawaiian"
-                        >Order</button>
+
+        <div class="">
+            <img src="./images/scrool.jpeg" alt="" height="400px">
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+
+    <!-- popular section starts  -->
+
+    <section class="popular" id="popular">
+
+        <h1 class="heading"> most <span>popular</span> pizzas </h1>
+
+        <div class="row most-popular">
+
+            <div class="col-md-4">
+                <div class="p-4 shadow border border-light rounded">
+                    <div class="thumbnail"><img src="./images/most.jpeg" alt=""></div>
+                    <div class="d-flex justify-content-between">
+                        <h3 class="align-self-center m-0 py-4">Peparoni</h3>
+                        <div class="align-self-center">
+                            <button type="button" class="btn orderBtn  btn-warning" data-price="1000"
+                                data-name="Peparoni">Order</button>
+                        </div>
                     </div>
                 </div>
             </div>
+            <div class="col-md-4">
+                <div class="p-4 shadow border border-light rounded">
+                    <!-- <span class="price"> $5 - $20 </span> -->
+                    <div class="thumbnail"><img src="./images/most2.jpeg" alt=""></div>
+                    <div class="d-flex justify-content-between">
+                        <h3 class="m-0 py-4">Hawaiian</h3>
+                        <div class="align-self-center">
+                            <button type="button" class="btn orderBtn  btn-warning" data-price="1000"
+                                data-name="hawaiian">Order</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-4">
                 <div class="p-4 shadow border border-light rounded">
                     <!-- <span class="price"> $5 - $20 </span> -->
                     <div class="thumbnail"><img src="./images/most1.jpeg" alt=""></div>
-                <div class="d-flex justify-content-between">
-                    <h3 class="m-0 py-4 align-self-center"">Periperi</h3>
-                    <div class="align-self-center">
-                        <button type="button" class="btn orderBtn btn-warning"
-                            data-price="1000"
-                            data-name="Periperi"
-                        >Order</button>
+                    <div class="d-flex justify-content-between">
+                        <h3 class="m-0 py-4 align-self-center">Periperi</h3>
+                        <div class="align-self-center">
+                            <button type="button" class="btn orderBtn btn-warning" data-price="1000"
+                                data-name="Periperi">Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- Button trigger modal -->
+        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button> -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Order</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="" alt="" width="100%">
+                        <div class="form-group">
+                            <label for="size">Select Size</label>
+                            <select name="size" id="size" class="form-control">
+                                <option value=""></option>
+                                <option value="Small">Small</option>
+                                <option value="Medium">Medium</option>
+                                <option value="Large">Large</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="crust">Select Crust</label>
+                            <select name="size" id="crust" class="form-control">
+                                <option value=""></option>
+                                <option value="Cryspy">Cryspy (100)</option>
+                                <option value="Stuffed">Stuffed (150)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="size">Select Size</label>
+                            <select name="size" id="topping" class="form-control" multiple>
+                                <option value="Beacon">Beacon (200)</option>
+                                <option value="Chicken">Chicken (250)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <strong class="price">0</strong>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" id="orderBtn">Order</button>
                     </div>
                 </div>
             </div>
         </div>
- 
-    </div>
 
-    <!-- Button trigger modal -->
-<!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-    Launch demo modal
-  </button> -->
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Order</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <img src="" alt="" width="100%">
-          <div class="form-group">
-              <label for="size">Select Size</label>
-              <select name="size" id="size" class="form-control">
-                  <option value=""></option>
-                  <option value="Small">Small</option>
-                  <option value="Medium">Medium</option>
-                  <option value="Large">Large</option>
-              </select>
-          </div>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h3 class="p-3">
+                    Shopping Cart
+                </h3>
 
-          <div class="form-group">
-            <label for="crust">Select Crust</label>
-            <select name="size" id="crust" class="form-control">
-                <option value=""></option>
-                <option value="Cryspy">Cryspy (100)</option>
-                <option value="Stuffed">Stuffed (150)</option>
-            </select>
-        </div>
+                <ul class="list-group list-group-flush" id="cartItems">
+                    <li class="list-group-item">
+                        <div class="d-flex justify-content-between">
+                            <div style="height: 100px; overflow: hidden; width: 80px;"><img src="" alt="" width="100%">
+                            </div>
+                            <div class="description"></div>
+                            <div class="price"></div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-between">
+                    <div><strong>Sub Total</strong></div>
+                    <div class="subtotal">0</div>
+                </div>
 
-        <div class="form-group">
-            <label for="size">Select Size</label>
-            <select name="size" id="topping" class="form-control" multiple>
-                <option value="Beacon">Beacon (200)</option>
-                <option value="Chicken">Chicken (250)</option>
-            </select>
-        </div>
+                <div>
+                    <h4>Delivery</h4>
+                    <select name="zones" id="zones">
+                        <option value="">Pick Up</option>
+                        <option value="Zone A">Zone A</option>
+                        <option value="Zone B">Zone B</option>
+                    </select>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div><strong> Total</strong></div>
+                    <div class="cost">0</div>
+                </div>
 
-        <div class="form-group">
-            <strong class="price">0</strong>
+                <div>
+                    <button class="btn btn-primary " id="checkoutBtn">Checkout</button>
+                </div>
+</div>
         </div>
 
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" id="orderBtn">Order</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
-  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <h3 class="p-3">
-          Shopping Cart
-      </h3>
-
-      <ul class="list-group list-group-flush" id="cartItems">
-          <li class="list-group-item">
-              <div class="d-flex justify-content-between">
-                  <div style="height: 100px; overflow: hidden; width: 80px;"><img src="" alt="" width="100%"></div>
-                  <div class="description"></div>
-                  <div class="price"></div>
-              </div>
-          </li>
-      </ul>
-      <div class="d-flex justify-content-between">
-        <div><strong>Sub  Total</strong></div>
-        <div class="subtotal">0</div>
-      </div>
-
-      <div>
-          <h4>Delivery</h4>
-          <select name="zones" id="zones">
-              <option value="">Pick Up</option>
-              <option value="Zone A">Zone A</option>
-              <option value="Zone B">Zone B</option>
-          </select>
-      </div>
-      <div class="d-flex justify-content-between">
-        <div><strong> Total</strong></div>
-        <div class="cost">0</div>
-      </div>
-
-      <div>
-          <button class="btn btn-primary " id="checkoutBtn">Checkout</button>
-      </div>
-        
-    </div>
-  </div>
-
-</section>
-
-<!-- popular section ends -->
-
-<!-- steps section starts  -->
-
-<div class="step-container">
-
-    <h1 class="heading">how it <span>works</span></h1>
-
-    <section class="steps">
-
-        <div class="box">
-            <img src="./images/step-1.jpg" alt="">
-            <h3>choose your favorite pizza</h3>
-        </div>
-        <div class="box">
-            <img src="./images/step-2.jpg" alt="">
-            <h3>free and fast delivery</h3>
-        </div>
-        <div class="box">
-            <img src="./images/step-3.jpg" alt="">
-            <h3>easy payments methods</h3>
-        </div>
-        <div class="box">
-            <img src="./images/step-4.jpg" alt="">
-            <h3>and finally, enjoy your pizza</h3>
-        </div>
     </section>
 
-</div>
+    <!-- popular section ends -->
 
-<!-- steps section ends -->
+    <!-- steps section starts  -->
 
-<!-- gallery section starts  -->
+    <div class="step-container">
 
-<section class="gallery" id="gallery">
+        <h1 class="heading">how it <span>works</span></h1>
 
-    <h1 class="heading"> Pizza<span> gallery </span> </h1>
+        <section class="steps d-flex justify-content-between">
 
-    <div class="box-container">
-
-        <div class="box">
-            <img src="./images/gal1.jpeg" alt="">
-            <div class="content">
-                <h3>Yummy</h3>
-                <p>Beef hawian</p>
+            <div class="box">
+                <img src="./images/step-1.jpg" alt="">
+                <h3>choose your favorite pizza</h3>
             </div>
-        </div>
-        <div class="box">
-            <img src="./images/gal2.jpeg" alt="">
-            <div class="content">
-                <h3>Yummy</h3>
-                <p>cheese.</p>
+            <div class="box">
+                <img src="./images/step-2.jpg" alt="">
+                <h3>free and fast delivery</h3>
             </div>
-        </div>
-        <div class="box">
-            <img src="./images/gal3.jpeg" alt="">
-            <div class="content">
-                <h3>Yummy</h3>
-                <p>Peparoni.</p>
+            <div class="box">
+                <img src="./images/step-3.jpg" alt="">
+                <h3>easy payments methods</h3>
             </div>
-        </div>
-        <div class="box">
-            <img src="./images/gal9.jpeg" alt="">
-            <div class="content">
-                <h3>Yummy</h3>
-                <p>chicken tikka.</p>
+            <div class="box">
+                <img src="./images/step-4.jpg" alt="">
+                <h3>and finally, enjoy your pizza</h3>
             </div>
-        </div>
-        <div class="box">
-            <img src="./images/gal5.jpeg" alt="">
-            <div class="content">
-                <h3>Yummy</h3>
-                <p>Extra Peparoni.</p>
-            </div>
-        </div>
-        <div class="box">
-            <img src="./images/gal6.jpeg" alt="">
-            <div class="content">
-                <h3>Yummy</h3>
-                <p>Chicken periperi.</p>
-
-            </div>
-        </div>
-        <div class="box">
-            <img src="./images/gal7.jpeg" alt="">
-            <div class="content">
-                <h3>Yummy</h3>
-                <p>hawaiian.</p>
-            </div>
-        </div>
-        <div class="box">
-            <img src="./images/gal8.jpeg" alt="">
-            <div class="content">
-                <h3>Yummy</h3>
-                <p>BBQ chicken</p>
-            </div>
-        </div>
-        <div class="box">
-            <img src="./images/gal9.jpeg" alt="">
-            <div class="content">
-                <h3>Yummy</h3>
-                <p>Extra topping.</p>
-            </div>
-        </div>
+        </section>
 
     </div>
 
-</section>
+    <!-- steps section ends -->
 
-<!-- gallery section ends -->
+    <!-- gallery section starts  -->
 
-<!-- order section starts  -->
+    <section class="gallery" id="gallery">
 
-<section class="order" id="order">
+        <h1 class="heading"> Pizza<span> gallery </span> </h1>
 
-    <h1 class="heading"> <span>order</span> now </h1>
+        <div class="row box-container">
 
-    <div class="row">
+            <div class="col-md-4">
+               <div class="box m-3">
+                <img src="./images/gal1.jpeg" alt="">
+                <div class="content">
+                    <h3>Yummy</h3>
+                    <p>Beef hawian</p>
+                </div>
+               </div>
+            </div>
+            <div class="col-md-4 box ">
+                <img src="./images/gal2.jpeg" alt="">
+                <div class="content">
+                    <h3>Yummy</h3>
+                    <p>cheese.</p>
+                </div>
+            </div>
+            <div class="col-md-4 box">
+                <img src="./images/gal3.jpeg" alt="">
+                <div class="content">
+                    <h3>Yummy</h3>
+                    <p>Peparoni.</p>
+                </div>
+            </div>
+            <div class="col-md-4 box">
+                <img src="./images/gal9.jpeg" alt="">
+                <div class="content">
+                    <h3>Yummy</h3>
+                    <p>chicken tikka.</p>
+                </div>
+            </div>
+            <div class="col-md-4 box">
+                <img src="./images/gal5.jpeg" alt="">
+                <div class="content">
+                    <h3>Yummy</h3>
+                    <p>Extra Peparoni.</p>
+                </div>
+            </div>
+            <div class="col-md-4 box">
+                <img src="./images/gal6.jpeg" alt="">
+                <div class="content">
+                    <h3>Yummy</h3>
+                    <p>Chicken periperi.</p>
 
-        <div class="image">
-            <img src="./images/save.jpeg" alt="">
+                </div>
+            </div>
+            <div class="col-md-4 box">
+                <img src="./images/gal7.jpeg" alt="">
+                <div class="content">
+                    <h3>Yummy</h3>
+                    <p>hawaiian.</p>
+                </div>
+            </div>
+            <div class="col-md-4 box">
+                <img src="./images/gal8.jpeg" alt="">
+                <div class="content">
+                    <h3>Yummy</h3>
+                    <p>BBQ chicken</p>
+                </div>
+            </div>
+            <div class="col-md-4 box">
+                <img src="./images/gal9.jpeg" alt="">
+                <div class="content">
+                    <h3>Yummy</h3>
+                    <p>Extra topping.</p>
+                </div>
+            </div>
+
         </div>
 
-        <!-- form -->
-        <form action="">
+    </section>
 
-            <div class="inputBox">
-                <input type="text" placeholder="name">
-                <input type="email" placeholder="email">
+    <!-- gallery section ends -->
+
+    <!-- order section starts  -->
+
+    <section class="order" id="order">
+
+        <h1 class="heading"> <span>order</span> now </h1>
+
+        <div class="row">
+
+           <div class="col-md-6">
+            <div class="image">
+                <img src="./images/save.jpeg" alt="">
             </div>
+           </div>
+            <div class="col-md-6">
+                <form action="" id="form">
 
-            <div class="inputBox">
-                <input type="number" placeholder="number">
-                <input type="text" placeholder="food name">
+                    <div class="inputBox">
+                        <input type="text" placeholder="name" name="name">
+                        <input type="email" placeholder="email">
+                    </div>
+    
+                    <div class="inputBox">
+                        <input type="number" placeholder="number">
+                        <input type="text" placeholder="food name">
+                    </div>
+    
+                    <textarea placeholder="address" name="" id="" cols="30" rows="5"></textarea>
+    
+                    <input type="submit" value="Send feedback" class="btn">
+    
+                </form>
             </div>
+            <!-- form -->
+        
+            <!-- form end -->
+        </div>
 
-            <textarea placeholder="address" name="" id="" cols="30" rows="10"></textarea>
+    </section>
 
-            <input type="submit" value="order now" class="btn">
+    <footer class="bg-dark text-center text-white">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/danny.myles.37"
+                    role="button"><i class="fab fa-facebook-f"></i></a>
 
-        </form>
-             <!-- form end -->
-    </div>
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/home" role="button"><i
+                        class="fab fa-twitter"></i></a>
 
-</section>
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://google.com/" role="button"><i
+                        class="fab fa-google"></i></a>
 
-<footer class="bg-dark text-center text-white">
-    <!-- Grid container -->
-    <div class="container p-4 pb-0">
-      <!-- Section: Social media -->
-      <section class="mb-4">
-        <!-- Facebook -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/danny.myles.37" role="button"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"><i
+                        class="fab fa-instagram"></i></a>
 
-        <!-- Twitter -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/home" role="button"
-          ><i class="fab fa-twitter"></i
-        ></a>
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1"
+                    href="https://www.linkedin.com/in/danny-myles-a0a6b8198/" role="button"><i
+                        class="fab fa-linkedin-in"></i></a>
 
-        <!-- Google -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://google.com/" role="button"
-          ><i class="fab fa-google"></i
-        ></a>
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/" role="button"><i
+                        class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
 
-        <!-- Instagram -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/" role="button"
-          ><i class="fab fa-instagram"></i
-        ></a>
-
-        <!-- Linkedin -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/danny-myles-a0a6b8198/" role="button"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
-
-        <!-- Github -->
-        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/" role="button"
-          ><i class="fab fa-github"></i
-        ></a>
-      </section>
-      <!-- Section: Social media -->
-    </div>
-    <!-- Grid container -->
-
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2021 Copyright:
-      <a class="text-white" href="https://mdbootstrap.com/">Danny Myles</a>
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">Danny Myles</a>
 </body>
 <script src="./javascript/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
 </html>
