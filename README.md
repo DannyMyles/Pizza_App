@@ -1,4 +1,4 @@
-# Pizza_Application
+<!-- # Pizza_Application
 # Pizza-Project | Responsive Pizza Restaurant Website
 
 This is a responsive one page website for a Pizza restaurant. It is a front-end only website that provides visitors with:
@@ -12,7 +12,7 @@ This is a responsive one page website for a Pizza restaurant. It is a front-end 
 
 ## Demo
 
-A demo of this site is available [here](https://nazarinewasonga.github.io/Pizza-Project/).
+A demo of this site is available [here]().
 
 This website is hosted by Github Pages, a static site hosting service which supports client-side code. It does not support server-side functionality.
 
@@ -40,4 +40,4 @@ Manual testing was undertaken for this application and satisfactorily passed. Th
 
 **Danny Myles** 
 To contribute to Pizza-project, reach me on [Email](dannymyles1999@gmail.com)
-+  ["https://github.com/NazarineWasonga" ]
++  ["https://github.com/NazarineWasonga" ] -->
