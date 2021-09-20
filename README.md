@@ -2,6 +2,11 @@
 
 This Website is a online pizza restaurant where customers order pizza online and get it delivered to they do step.
 
+# How To order
+- Click the order button,
+- Choose your preferable size,topping and crust
+- Chlick the blue order button to add to Cart
+- Open the Cart section, select zone then check out
 
 ### **Check out the website :stars:**
 https://dannymyles.github.io/Pizza_Web/
